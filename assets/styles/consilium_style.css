@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  height: 50px;
+  background-image: linear-gradient(to right, #546167, #2a333a);
+}
+
+.header__home-logo {
+  margin-left: 2rem;
+}
+
+.header__home-img {
+  width: 2rem;
+}
+
+.main-visual {
+  height: 500px;
+  background-image: linear-gradient(to right, #546167, #2a333a);
+}/*# sourceMappingURL=consilium_style.css.map */
