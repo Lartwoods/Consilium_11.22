@@ -5,6 +5,10 @@
   text-decoration: none;
   box-sizing: border-box;
 }
+@mixin border {
+  border: solid 1px transparent;
+  border-radius: 4px;
+}
 html,
 body {
   height: 100%;
@@ -19,6 +23,7 @@ $linear-gradient: (to right, #546167, #2a333a);
 }
 .header__home-logo {
   margin: 1%;
+  cursor: pointer;
 }
 .header__home-img {
   width: 2rem;
@@ -28,15 +33,14 @@ $linear-gradient: (to right, #546167, #2a333a);
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-
   height: auto;
   background-image: linear-gradient(to right, #546167, #2a333a);
 }
 .block {
+  @include border;
   width: 45%;
   height: 300px;
-  margin: 0 1% 1% 1%;
-
+  margin: 0 1% 2% 1%;
   border: 1px solid rgb(40, 49, 118);
 }
 .main__ray {
@@ -49,7 +53,21 @@ $linear-gradient: (to right, #546167, #2a333a);
   background-size: cover;
 }
 .main__text {
+  width: 30%;
+  background-color: #edf7ff;
+  opacity: 50%;
+  border: #546167;
+  border: solid 1px transparent;
+  border-radius: 4px;
 }
-.main__text:focus {
-  border-color: 2px solid red;
+.main__button {
+  @include border;
+  background-color: #546167;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 5%;
+  height: 30px;
+
+  font-size: 0.8rem;
+
+  cursor: pointer;
 }
