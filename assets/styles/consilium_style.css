@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 .header {
   display: flex;
   align-items: flex-end;
@@ -23,6 +28,17 @@
 }
 
 .main-visual {
-  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: calc(100% - 50px);
   background-image: linear-gradient(to right, #546167, #2a333a);
+}
+
+.block {
+  width: 45%;
+  height: 250px;
+  margin: 0 2% 2% 2%;
+  border: 1px solid rgb(40, 49, 118);
 }/*# sourceMappingURL=consilium_style.css.map */
