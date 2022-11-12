@@ -23,7 +23,7 @@ body {
 }
 
 .header__home-img {
-  width: 2rem;
+  width: 1.2rem;
 }
 
 .main-visual {
@@ -63,6 +63,7 @@ body {
   -moz-transform: scale(2);
   -ms-transform: scale(2);
   -o-transform: scale(2);
+  transition: transform 0.25s;
 }
 
 .main__form {
