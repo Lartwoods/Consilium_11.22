@@ -7,18 +7,21 @@
 }
 @mixin border {
   border: solid 1px transparent;
-  border-radius: 4px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
 body {
   height: 100%;
 }
-$linear-gradient: (to right, #546167, #2a333a);
+
 .header {
   display: flex;
   align-items: flex-end;
   width: 100%;
   height: auto;
-  background-image: linear-gradient(to right, #546167, #2a333a);
 }
 .header__home-logo {
   margin: 1%;
@@ -33,7 +36,6 @@ $linear-gradient: (to right, #546167, #2a333a);
   justify-content: center;
   align-items: center;
   height: auto;
-  background-image: linear-gradient(to right, #546167, #2a333a);
 }
 .block {
   @include border;
@@ -88,13 +90,17 @@ $linear-gradient: (to right, #546167, #2a333a);
 .main__button {
   @include border;
 
-  background-color: #0b242d;
   color: #ffffff;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  font-family: "Arial", Arial, sans-serif;
+  line-height: 1.55;
+  font-weight: 600;
+  border-radius: 30px;
+  background-color: #007494;
+  background-position: center center;
   width: 70px;
   height: 30px;
-  font-size: 0.8rem;
-  font-weight: light;
+
   cursor: pointer;
 }
 .main__button:active {

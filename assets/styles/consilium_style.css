@@ -15,7 +15,6 @@ body {
   align-items: flex-end;
   width: 100%;
   height: auto;
-  background-image: linear-gradient(to right, #546167, #2a333a);
 }
 
 .header__home-logo {
@@ -33,12 +32,15 @@ body {
   justify-content: center;
   align-items: center;
   height: auto;
-  background-image: linear-gradient(to right, #546167, #2a333a);
 }
 
 .block {
   border: solid 1px transparent;
-  border-radius: 4px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
   width: 45%;
   height: 300px;
   margin: 0 1% 2% 1%;
@@ -87,14 +89,21 @@ body {
 
 .main__button {
   border: solid 1px transparent;
-  border-radius: 4px;
-  background-color: #0b242d;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
   color: #ffffff;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  font-family: "Arial", Arial, sans-serif;
+  line-height: 1.55;
+  font-weight: 600;
+  border-radius: 30px;
+  background-color: #007494;
+  background-position: center center;
   width: 70px;
   height: 30px;
-  font-size: 0.8rem;
-  font-weight: light;
   cursor: pointer;
 }
 
