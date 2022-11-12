@@ -57,7 +57,7 @@ body {
 
 .main__ray:hover {
   position: absolute;
-  margin-top: 10%;
+  margin-top: 15%;
   transform: scale(2);
   -webkit-transform: scale(2);
   -moz-transform: scale(2);
@@ -73,7 +73,8 @@ body {
 }
 
 .main__ray:hover + .main__form {
-  position: relative;
+  position: absolute;
+  margin-top: 900px;
   width: 80%;
   height: 60px;
 }
