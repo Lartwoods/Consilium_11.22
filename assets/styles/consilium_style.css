@@ -183,4 +183,9 @@ body {
 
 .swiper-slide__img {
   border-radius: 12px;
+  transform: scale(1.2);
+}
+
+.swiper-slide__img:hover {
+  transform: scale(1.8);
 }/*# sourceMappingURL=consilium_style.css.map */

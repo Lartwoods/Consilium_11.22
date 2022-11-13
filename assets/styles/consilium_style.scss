@@ -183,4 +183,10 @@ body {
 }
 .swiper-slide__img {
   border-radius: 12px;
+  transform: scale(1.2);
+}
+.swiper-slide__img:hover{
+  -webkit-transform: scale(1.8);
+  -ms-transform: scale(1.8);
+  transform: scale(1.8);
 }
