@@ -30,7 +30,12 @@
           src="three\three.js-master\examples\test.html"
         ></iframe>
       </div>
-      <div class="main__slider block">
+      <div
+        onmouseover="hoverOnSlider()"
+        onmouseout="hoverOffSlider()"
+        id="main__slider"
+        class="main__slider block"
+      >
         <div
           style="
             --swiper-navigation-color: #fff;
@@ -78,7 +83,12 @@
           </div>
         </div>
       </div>
-      <div class="main__ray block">
+      <div
+        onmouseover="hoverOnRay()"
+        onmouseout="hoverOffRay()"
+        class="main__ray block"
+        id="main__ray"
+      >
         <div
           style="
             --swiper-navigation-color: #fff;
@@ -144,10 +154,12 @@
           </div>
         </div>
       </div>
+
       <form class="main__form">
         <textarea name="info" class="main__text block"></textarea>
         <button type="submit" class="main__button">Save</button>
       </form>
+      <div class="main__link-ray" href="assets/images/optg.JPG"></div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script>
@@ -178,13 +190,14 @@
       var swiper2 = new Swiper(".mySwiper4", {
         spaceBetween: 10,
         navigation: {
-          nextEl: ".swiper3-button-next",
-          prevEl: ".swiper3-button-prev",
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
         thumbs: {
           swiper: swiper,
         },
       });
     </script>
+    <script type="text/javascript" src="assets/styles/consilium_js.js"></script>
   </body>
 </html>
