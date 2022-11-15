@@ -53,10 +53,6 @@ body {
   border: 1.5px solid #007494;
 }
 
-.main__stl {
-  background-color: #007494;
-}
-
 .main__ray {
   background-image: url(../images/optg.JPG);
   background-repeat: no-repeat;
@@ -69,6 +65,8 @@ body {
 .main__slider:hover,
 .main__stl:hover {
   position: absolute;
+  width: 35%;
+  height: 45%;
   margin-top: 15%;
   transform: scale(2);
   -webkit-transform: scale(2);
