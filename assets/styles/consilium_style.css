@@ -63,7 +63,7 @@ body {
   -moz-transform: scale(2);
   -ms-transform: scale(2);
   -o-transform: scale(2);
-  transition: transform 0.25s;
+  transition: transform 0.1s;
 }
 
 .main__form {
@@ -177,15 +177,19 @@ body {
   display: block;
   width: 100%;
   height: 100%;
+  object-fit: cover;
   -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .swiper-slide__img {
   border-radius: 12px;
-  transform: scale(1.2);
 }
 
 .swiper-slide__img:hover {
-  transform: scale(1.8);
+  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -o-transform: scale(1.3);
+  transition: transform 0.25s;
+  cursor: pointer;
 }/*# sourceMappingURL=consilium_style.css.map */
