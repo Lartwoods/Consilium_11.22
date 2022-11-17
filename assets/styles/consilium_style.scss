@@ -61,6 +61,22 @@ body {
   cursor: pointer;
 }
 
+.main__stl:hover {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  margin-top: 40%;
+}
+.main__stl:hover ~ .main__form {
+  position: absolute;
+  margin-top: 83%;
+  width: 80%;
+  height: 60px;
+}
+.main__slider,
+.main__stl {
+  cursor: pointer;
+}
 .main__ray:hover,
 .main__slider:hover {
   position: absolute;
@@ -73,7 +89,6 @@ body {
   -moz-transform: scale(2);
   -ms-transform: scale(2);
   -o-transform: scale(2);
-  transition: transform 0.25s;
 }
 .main__form {
   display: flex;
@@ -223,4 +238,8 @@ body {
 
 .swiper-slide__img {
   border-radius: 12px;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: #007494;
 }
