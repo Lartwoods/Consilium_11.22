@@ -73,26 +73,7 @@ body {
   -moz-transform: scale(2);
   -ms-transform: scale(2);
   -o-transform: scale(2);
-}
-.main__stl:hover {
-  position: absolute;
-  width: 80%;
-  height: 80%;
-  margin-top: 40%;
-}
-.main__stl:hover ~ .main__form {
-  position: absolute;
-  margin-top: 83%;
-  width: 80%;
-  height: 60px;
-}
-.main__slider,
-.main__stl {
-  cursor: pointer;
-}
-.main__slider.active,
-.main__ray.active {
-  display: none;
+  transition: transform 0.25s;
 }
 .main__form {
   display: flex;
@@ -230,6 +211,7 @@ body {
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+  -o-object-fit: cover;
 }
 .swiper-slide__img {
   display: block;
@@ -242,8 +224,3 @@ body {
 .swiper-slide__img {
   border-radius: 12px;
 }
-.swiper-button-next,
-.swiper-button-prev {
-  background-color: #007494;
-}
-/*# sourceMappingURL=consilium_style.css.map */
