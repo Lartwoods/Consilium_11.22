@@ -237,6 +237,7 @@ body {
   -o-object-fit: cover;
   object-fit: cover;
   -o-object-fit: cover;
+  border-radius: 20px;
 }
 
 .swiper-slide__img {
@@ -248,7 +249,7 @@ body {
 }
 
 .swiper-slide__img {
-  border-radius: 12px;
+  border-radius: 20px;
 }
 
 .swiper-button-next,
