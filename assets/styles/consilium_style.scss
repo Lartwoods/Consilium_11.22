@@ -61,30 +61,34 @@ body {
   cursor: pointer;
 }
 
-.main__ray:hover,
-.main__slider:hover,
 .main__stl:hover {
   position: absolute;
-  width: 35%;
-  height: 45%;
-  margin-top: 15%;
-  transform: scale(2);
-  -webkit-transform: scale(2);
-  -moz-transform: scale(2);
-  -ms-transform: scale(2);
-  -o-transform: scale(2);
+  width: 80%;
+  height: 80%;
+  margin-top: 40%;
 }
-
-.main__ray:hover ~ .main__slider {
-  display: none;
+.main__stl:hover ~ .main__form {
+  position: absolute;
+  margin-top: 83%;
+  width: 80%;
+  height: 60px;
 }
 .main__slider,
 .main__stl {
   cursor: pointer;
 }
-.main__slider.active,
-.main__ray.active {
-  display: none;
+.main__ray:hover,
+.main__slider:hover {
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  margin-top: 18%;
+  z-index: 99;
+  transform: scale(2);
+  -webkit-transform: scale(2);
+  -moz-transform: scale(2);
+  -ms-transform: scale(2);
+  -o-transform: scale(2);
 }
 .main__form {
   display: flex;
@@ -96,8 +100,7 @@ body {
   display: none;
 }
 .main__ray:hover + .main__form,
-.main__slider:hover ~ .main__form,
-.main__stl:hover ~ .main__form {
+.main__slider:hover ~ .main__form {
   position: absolute;
   margin-top: 920px;
   width: 80%;
@@ -223,6 +226,8 @@ body {
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+  -o-object-fit: cover;
+  border-radius: 20px;
 }
 .swiper-slide__img {
   display: block;
@@ -233,10 +238,9 @@ body {
 }
 
 .swiper-slide__img {
-  border-radius: 12px;
+  border-radius: 20px;
 }
 .swiper-button-next,
 .swiper-button-prev {
   background-color: #007494;
 }
-/*# sourceMappingURL=consilium_style.css.map */
