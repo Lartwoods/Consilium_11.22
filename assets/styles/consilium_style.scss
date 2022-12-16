@@ -57,43 +57,64 @@ body {
   border: 1.5px solid #007494;
 }
 .main__stl_viewer {
-  width:100%;
-  height:100%;
+  width: 100%;
+  height: 100%;
   border-radius: 20px;
 }
 .main__ray {
   cursor: pointer;
-margin-left: 0;
-}
-
-.main__stl:hover {
-  position: absolute;
-  width: 80%;
-  height: 80%;
-  margin-top: 40%;
-}
-.main__stl:hover ~ .main__form {
-  position: absolute;
-  margin-top: 83%;
-  width: 80%;
-  height: 60px;
+  margin-left: 0;
 }
 .main__slider,
 .main__stl {
   cursor: pointer;
 }
-.main__ray:hover,
-.main__slider:hover {
-  position: absolute;
-  width: 40%;
-  height: 40%;
-  margin-top: 18%;
-  z-index: 99;
-  transform: scale(2);
-  -webkit-transform: scale(2);
-  -moz-transform: scale(2);
-  -ms-transform: scale(2);
-  -o-transform: scale(2);
+@media screen and (min-width: 769px) {
+  .main__stl:hover {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    margin-top: 40%;
+  }
+  .main__stl:hover ~ .main__form {
+    position: absolute;
+    margin-top: 83%;
+    width: 80%;
+    height: 60px;
+  }
+
+  .main__ray:hover,
+  .main__slider:hover {
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    margin-top: 18%;
+    z-index: 99;
+    transform: scale(2);
+    -webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    -ms-transform: scale(2);
+    -o-transform: scale(2);
+  }
+  .main__ray:hover + .main__form,
+  .main__slider:hover ~ .main__form {
+    position: absolute;
+    margin-top: 920px;
+    width: 80%;
+    height: 60px;
+  }
+  .main__slider:hover + .main__ray,
+  .main__stl:hover + .main__slider,
+  .main__stl:hover ~ .main__ray {
+    display: none;
+  }
+
+  .main__button:hover,
+  .main__button:focus {
+    color: #a39fd8;
+    border-color: currentColor;
+    background-color: rgb(255, 255, 255);
+  }
 }
 .main__form {
   display: flex;
@@ -104,19 +125,7 @@ margin-left: 0;
 .main__link-ray {
   display: none;
 }
-.main__ray:hover + .main__form,
-.main__slider:hover ~ .main__form {
-  position: absolute;
-  margin-top: 920px;
-  width: 80%;
-  height: 60px;
-}
 
-.main__slider:hover + .main__ray,
-.main__stl:hover + .main__slider,
-.main__stl:hover ~ .main__ray {
-  display: none;
-}
 .main__link-ray {
   display: none;
 }
@@ -133,6 +142,7 @@ margin-left: 0;
 
 .main__button {
   @include border;
+
   border: solid 1px transparent;
   border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -154,13 +164,6 @@ margin-left: 0;
 
 .main__button:active {
   transform: translateY(1px);
-}
-
-.main__button:hover,
-.main__button:focus {
-  color: #a39fd8;
-  border-color: currentColor;
-  background-color: rgb(255, 255, 255);
 }
 
 .swiper,
@@ -248,4 +251,17 @@ margin-left: 0;
 .swiper-button-next,
 .swiper-button-prev {
   background-color: #007494;
+}
+@media screen and (max-width: 768px) {
+  .main-visual {
+    display: block;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+  }
+  .block,
+  .main__form {
+    width: 90%;
+    margin: 5%;
+  }
 }
